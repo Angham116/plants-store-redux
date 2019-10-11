@@ -49,7 +49,7 @@ export default class ProductDetails extends Component {
               <Card.Text>Price: {product[0].price}$</Card.Text>
               <input type="number" name="productsNum" onChange={this.handleChange} />
             </Card.Body>
-            <Button variant="primary" className=>Add To Card</Button>
+            <Button variant="primary" className="btn add-btn">Add To Card</Button>
           </Card>
         )}
       </>
