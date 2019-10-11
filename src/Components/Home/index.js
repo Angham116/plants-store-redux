@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
 
-import getProducts from '../../API/getProducts'
+import getProducts from '../../API/getProducts';
 
 import ProductCard from '../ProductCard';
 
