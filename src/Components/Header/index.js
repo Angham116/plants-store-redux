@@ -7,23 +7,29 @@ import {
   cartUrl
 } from '../../urls';
 
+import {
+  CartIcon
+} from '../index';
+
 import './style.css';
 
 export default class Header extends Component {
   render() {
     return (
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="mr-auto">
-            <Link to={homeUrl}>Home</Link>
-          </Nav>
+      <div className="header-container">
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+          <Navbar.Brand href={homeUrl} className="logo">Greener</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav" className="navbar-toggle">
           <Nav className="mr-auto">
-            <Link to={cartUrl}>Shopping cart</Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
+              <Link to={homeUrl}>Home</Link>
+            </Nav>
+            <Nav className="mr-auto">
+              <Link to={cartUrl}><CartIcon /></Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+      </div>
     )
   }
 }

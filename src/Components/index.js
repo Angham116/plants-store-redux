@@ -4,6 +4,7 @@ import Header from './Header';
 import Home from './Home';
 import Cart from './Cart';
 import ProductDetails from './Product';
+import CartIcon from './CartIcon';
 
 export {
   LandingPage,
@@ -11,5 +12,6 @@ export {
   Header,
   Home,
   Cart,
-  ProductDetails
+  ProductDetails,
+  CartIcon
 };
