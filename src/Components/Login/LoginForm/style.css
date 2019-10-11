@@ -1,0 +1,78 @@
+.email-box {
+  margin-bottom: 30px;
+}
+
+.email-box,
+.password-box {
+  padding-right: 20px;
+}
+
+.email-label,
+.email-input {
+  display: block;
+  letter-spacing: 1px;
+}
+
+.email-label {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.email-input {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 15px;
+  border: 1px solid rgb(238, 238, 239);
+}
+
+.email-label,
+.email-input,
+.forget-password-btn {
+  color: rgb(187, 196, 204) !important;
+}
+
+.password {
+  position: relative;
+}
+
+.password-box {
+  margin-bottom: 30px;
+}
+
+.login-btn-container {
+  margin-bottom: 50px;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 15px;
+  right: 16px;
+  font-size: 16px;
+}
+
+.login-button {
+  width: 95%;
+  border: none;
+  height: 45px;
+  color: #fff;
+  letter-spacing: 2px;
+  background: #20d29b;
+  border: 1px solid #15c4a2;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.forget-password {
+  text-align: center !important;
+}
+
+.forget-password-btn {
+  border: none;
+  background: #fff;
+}
+
+.login-button,
+.forget-password-btn,
+.eye-icon {
+  cursor: pointer;
+}

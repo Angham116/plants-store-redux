@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "Plant 1",
+    "price": 100,
+    "image": "https://i.pinimg.com/564x/b1/af/1a/b1af1a92861f2fc385feb80c405c56df.jpg",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\n          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  },
+  {
+    "id": 2,
+    "name": "Plant 2",
+    "price": 1000,
+    "image": "https://i.pinimg.com/564x/7c/07/fb/7c07fbe4b59ef520c12e338b8f35aebd.jpg",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\n          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  },
+  {
+    "id": 3,
+    "name": "Plant 3",
+    "price": 2000,
+    "image": "https://i.pinimg.com/564x/a8/1b/bf/a81bbfc9b004821f38e9afe617a62f65.jpg",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\n          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  },
+  {
+    "id": 4,
+    "name": "Plant 4",
+    "price": 150,
+    "image": "https://i.pinimg.com/564x/8a/b9/79/8ab979c2ad65651e824be1f7b653144c.jpg",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\n          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  },
+  {
+    "id": 5,
+    "name": "Plant 5",
+    "price": 150,
+    "image": "https://i.pinimg.com/564x/42/c2/f3/42c2f3c18ca1787a83e83f98ddbf318a.jpg",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\n          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  },
+  {
+    "id": 6,
+    "name": "Plant 6",
+    "price": 150,
+    "image": "https://i.pinimg.com/564x/8a/86/47/8a86471379d703729cabe149d7dec3bc.jpg",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\n          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  },
+  {
+    "id": 7,
+    "name": "Plant 7",
+    "price": 150,
+    "image": "https://i.pinimg.com/564x/8c/7c/20/8c7c2086e58c9df2866450f25381f8f9.jpg",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\n          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  },
+  {
+    "id": 8,
+    "name": "Plant 8",
+    "price": 150,
+    "image": "https://i.pinimg.com/564x/c6/d3/53/c6d353f2138b8602b1302ae41ebb1a0d.jpg",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\n          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  },
+  {
+    "id": 9,
+    "name": "Plant 9",
+    "price": 150,
+    "image": "https://i.pinimg.com/564x/b1/af/1a/b1af1a92861f2fc385feb80c405c56df.jpg",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the\n          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+  }
+]
