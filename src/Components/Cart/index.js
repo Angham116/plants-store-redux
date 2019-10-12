@@ -25,7 +25,7 @@ export default class Cart extends Component {
     const  { products } = this.state;
     return (
       <div>
-        <h1>Products</h1>
+        <h1>Cart</h1>
         <Row>
           {products.length && (
             products.map(product => {

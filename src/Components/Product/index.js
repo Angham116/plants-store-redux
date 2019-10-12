@@ -46,7 +46,7 @@ export default class ProductDetails extends Component {
         {product.length && (
           <>
             <Col lg={4}>
-              <img src={product[0].image}  style={{ width: '80%' }}/>
+              <img src={product[0].image}  style={{ width: '80%' }} alt={`plant ${product[0].name}`}/>
             </Col>
             <Col lg={8}>
               <Card>
