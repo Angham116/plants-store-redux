@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Row, Col, Card, Button, Spinner } from 'react-bootstrap';
 
 import getProduct from '../../API/getProduct';
 
-export default class ProductDetails extends Component {
+import {
+  addToCart
+} from '../../Store/Actions/actions';
+class ProductDetails extends Component {
 
   state = {
     loading: true,
@@ -12,16 +16,9 @@ export default class ProductDetails extends Component {
   }
 
   async componentDidMount(){
-    // fetch API with product id
-    // console.log(this.props.match.params.id)
-    // console.log(id)
     try {
       const { id } = this.props.match.params;
       const product = await getProduct(id);
-      // console.log(222222, product)
-      // setTimeout(() => {
-      //   this.setState({ product, loading: false })
-      // }, 2000)
       this.setState({ product, loading: false })
     } catch(err) {
       console.log('Errrrr from ProductDetails componentDidMount')
@@ -33,6 +30,12 @@ export default class ProductDetails extends Component {
       return ;
     }
     this.setState({ [e.target.name] : e.target.value })
+  }
+
+  handleAddToCart = () => {
+    const { product, quantity} = this.state;
+    // console.log(product, quantity)
+    this.props.addToCart(product, quantity)
   }
 
   render() {
@@ -54,10 +57,18 @@ export default class ProductDetails extends Component {
                 <Card.Title>{product[0].name}</Card.Title>
                 <Card.Text>{product[0].description}</Card.Text>
                     <Card.Text>Price: {product[0].price}$</Card.Text>
-                <input type="number" name="quantity" onChange={this.handleChange} />
+                <input 
+                  type="number" 
+                  name="quantity" 
+                  onChange={this.handleChange} 
+                />
                   </Card.Body>
                   <p>Total: {quantity}</p>
-                  <Button variant="primary" className="btn add-btn">Add To Card</Button>
+                  <Button 
+                    variant="primary" 
+                    className="btn add-btn"
+                    onClick={this.handleAddToCart}
+                  >Add To Card</Button>
                 </Card>
             </Col>
           </>
@@ -66,3 +77,13 @@ export default class ProductDetails extends Component {
     )
   }
 }
+
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    // on the dispatch we call the creator function (the function that make the action(addToCart))
+    addToCart: (product, quantity) => dispatch(addToCart(product, quantity))
+  }
+}
+
+export default connect(null, mapDispatchToProps)(ProductDetails);
