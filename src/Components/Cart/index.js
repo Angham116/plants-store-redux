@@ -32,10 +32,10 @@ class Cart extends Component {
         <Row>
           {/* {console.log(444, this.props.total)} */}
           {products.length && (
-            products.map(product => {
+            products.map(({product, quantity}) => {
               return (
-                <Col lg="3" key={product.product.id}>
-                  <CartItem product={product}/>
+                <Col lg="3" key={product.id}>
+                  <CartItem product={product} quantity={quantity}/>
                 </Col>
               )
             })
