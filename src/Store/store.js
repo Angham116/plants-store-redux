@@ -11,6 +11,16 @@ const initialState = {
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." 
       },
       quantity: 3
+    },
+    {
+      product: {
+        "id": 4,
+        "name": "Plant 4",
+        "price": "150",
+        "image": "https://i.pinimg.com/564x/8a/b9/79/8ab979c2ad65651e824be1f7b653144c.jpg",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." 
+      },
+      quantity: 5
     }
   ]
 };
