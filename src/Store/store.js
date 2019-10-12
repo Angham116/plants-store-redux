@@ -37,6 +37,10 @@ const reducers = (state) => {
 
 // createStore take 2 params : (reducer & initialState)
 
-const store = createStore(cartReducer, initialState)
+const store = createStore(
+  cartReducer, 
+  initialState,
+  window.__REDUX__DEVTOOLS__EXTENSION__ && window.__REDUX__DEVTOOLS__EXTENSION__()
+)
 
 export default store;
