@@ -1,5 +1,9 @@
 import { createStore } from 'redux';
 
+import {
+  cartReducer
+} from './Reducers/productsReducers';
+
 const initialState = {
   cart: [
     {
@@ -33,6 +37,6 @@ const reducers = (state) => {
 
 // createStore take 2 params : (reducer & initialState)
 
-const store = createStore(reducers, initialState)
+const store = createStore(cartReducer, initialState)
 
 export default store;

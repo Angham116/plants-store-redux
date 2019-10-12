@@ -21,7 +21,7 @@ function CartIcon(props) {
 // to take data from the central state
 const mapStateToProps = (state) => {
   return {
-    totalQuantity: state.cart.reduce((total, product) => total + product.quantity, 0)
+    totalQuantity: state.cart.reduce((total, product) => total + parseInt(product.quantity), 0)
   }
 }
 
