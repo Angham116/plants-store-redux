@@ -1,0 +1,65 @@
+.landing-page-container {
+  text-align: center;
+}
+
+.logo {
+  padding: 30px;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 2px;
+}
+
+.logo-span {
+  color: #15c4a2;
+}
+
+.logo-description {
+  color: rgb(187, 196, 204);
+  font-size: 18px;
+}
+
+.app-img img {
+  width: 100%;
+  margin-bottom: 7px;
+}
+
+.login,
+.signup {
+  margin: 0 44px;
+}
+
+.login {
+  margin-bottom: 10px;
+}
+
+.login-btn,
+.signup-btn {
+  text-align: center !important;
+  width: 100% !important;
+  background: none;
+  border: none;
+  height: 45px;
+}
+
+.login-btn {
+  background: #20d29b;
+  border: 1px solid #15c4a2;
+  border-radius: 2px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.login-btn a {
+  color: #fff !important;
+  font-size: 18px;
+}
+
+.signup-btn {
+  font-size: 18px;
+  letter-spacing: 2px;  
+}
+
+.signup-btn a {
+  color: #000;
+}
+

@@ -1,0 +1,10 @@
+.cart-icon i {
+  font-size: 24px;
+  color: black;
+}
+
+.quantity-nums {
+  position: absolute;
+  top: 5%;
+}
+
