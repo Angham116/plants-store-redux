@@ -1,7 +1,17 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Card, Button } from 'react-bootstrap';
 
-export default class CartItem extends Component {
+import {
+  deleteFromCart
+} from '../../Store/Actions/actions';
+class CartItem extends Component {
+
+  handleDeleteProduct = (productId) => {
+    // console.log(productId)
+    this.props.deleteFromCart(productId)
+  }
+
   render() {
     const { product, quantity } = this.props;
     return (
@@ -13,10 +23,25 @@ export default class CartItem extends Component {
           <Card.Text>Price: {product.price}$</Card.Text>
           <Card.Text>Quantity: {quantity}</Card.Text>
           <Card.Text>Total: {product.price * quantity} $</Card.Text>
-          <Button variant="danger"><i className="fa fa-trash"></i>Delete</Button>
+          <Button 
+            variant="danger"
+            onClick={() => this.handleDeleteProduct(product.id)}
+          >
+            <i className="fa fa-trash"></i>
+            Delete
+          </Button>
         </Card.Body>
       </Card>
       </>
     )
   }
 }
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    deleteFromCart: (productId) => dispatch(deleteFromCart(productId))
+  }
+}
+
+export default connect(null, mapDispatchToProps)(CartItem);
+// export default CartItem

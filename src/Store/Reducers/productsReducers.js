@@ -1,5 +1,6 @@
 import {
-  ADD_TO_CART
+  ADD_TO_CART, 
+  DELETE_FROM_CART
 } from '../Actions/types';
 
 const cartReducer = (state, action) => {
@@ -15,6 +16,23 @@ const cartReducer = (state, action) => {
             quantity: action.quantity
           }
         ]
+      }
+    }
+    case DELETE_FROM_CART: {
+      // console.log(999, action)
+      const { productId } = action;
+      // console.log(44, productId)
+      const prevState = { ...state };
+      // console.log(77, cart.cart)
+      const cart = prevState.cart.filter(item => item.product.id !== productId)
+      // console.log(888, remainingProducts)
+      // delete nextState.cart[productId];
+      return {
+        cart
+        // cart: [
+          // ...state.cart,
+          // {newCart: remainingProducts}
+        // ]
       }
     }
 
