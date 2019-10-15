@@ -7,7 +7,6 @@ import {
 const cartReducer = (state, action) => {
   switch(action.type){
     case ADD_TO_CART: {
-      console.log(333, action.product)
       return {
         cart: [
           ...state.cart,
@@ -29,13 +28,10 @@ const cartReducer = (state, action) => {
       }
     }
     case CLEAR_CART: {
-      const prevState = { ...state };
-      const cart = [];
       return {
-        cart
+        cart: []
       }
     }
-
     // default: current state
     default:
       return state
@@ -45,3 +41,4 @@ const cartReducer = (state, action) => {
 export {
   cartReducer
 };
+

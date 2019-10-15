@@ -29,14 +29,8 @@ const initialState = {
   ]
 };
 
-// hypothetical reducer
-const reducers = (state) => {
-  return state;
-}
-
 
 // createStore take 2 params : (reducer & initialState)
-
 const store = createStore(
   cartReducer, 
   initialState,
@@ -44,3 +38,4 @@ const store = createStore(
 )
 
 export default store;
+

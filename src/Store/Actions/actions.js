@@ -5,7 +5,6 @@ import {
 } from './types';
 
 const addToCart = (product, quantity) => {
-  console.log(product)
   return {
     type: ADD_TO_CART,
     product: product,

@@ -8,7 +8,6 @@ import {
 class CartItem extends Component {
 
   handleDeleteProduct = (productId) => {
-    // console.log(productId)
     this.props.deleteFromCart(productId)
   }
 
@@ -44,4 +43,4 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 export default connect(null, mapDispatchToProps)(CartItem);
-// export default CartItem
+

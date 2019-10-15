@@ -80,7 +80,6 @@ class ProductDetails extends Component {
 
 
 const mapDispatchToProps = (dispatch) => {
-  console.log(99, dispatch)
   return {
     // on the dispatch we call the creator function (the function that make the action(addToCart))
     addToCart: (product, quantity) => dispatch(addToCart(product, quantity))
