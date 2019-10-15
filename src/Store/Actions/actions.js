@@ -15,7 +15,6 @@ const addToCart = (product, quantity) => {
 
 // delete action creator
 const deleteFromCart = (productId) => {
-  // console.log(666, productId)
   return {
     type: DELETE_FROM_CART, // action type
     productId // action payload

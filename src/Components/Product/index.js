@@ -34,7 +34,6 @@ class ProductDetails extends Component {
 
   handleAddToCart = () => {
     const { product, quantity} = this.state;
-    // console.log(product, quantity)
     this.props.addToCart(product, quantity)
   }
 
@@ -45,7 +44,6 @@ class ProductDetails extends Component {
       return <Spinner animation="border" variant="primary" />
     return (
       <Row>
-        {/* {console.log(222, product)} */}
         {product.length && (
           <>
             <Col lg={4}>
@@ -87,3 +85,4 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 export default connect(null, mapDispatchToProps)(ProductDetails);
+

@@ -12,7 +12,6 @@ export default class Home extends Component {
   async componentDidMount(){
     try {
       const products = await getProducts();
-      // console.log(11111111, products)
       this.setState({ products })
     } catch(e) {
       console.log('Errrrrrrrrr from Home Comp.')
@@ -39,3 +38,4 @@ export default class Home extends Component {
     )
   }
 }
+
