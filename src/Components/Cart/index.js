@@ -1,17 +1,45 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
-import { Row, Col, Button } from 'react-bootstrap';
+import { Row, Col, Button, Alert } from 'react-bootstrap';
 
-import getProducts from '../../API/getProducts';
+import {
+  clearCart
+} from '../../Store/Actions/actions'
 
 import CartItem from '../CartItem';
 class Cart extends Component {
 
+  state = {
+    showAlert: false,
+    variant: ''
+  }
+
+
+  handleOrder = () => {
+    // send the request to the server
+    this.props.clearCart();
+    
+    this.setState(
+      {
+      showAlert: true,
+      variant: "success"
+    }
+    ,
+    () => setTimeout(() => {
+      this.setState({ showAlert: false, variant: "" })
+    }, 1500)
+    )
+  }
+
   render() {
+    const { showAlert, variant } = this.state;
     const { products, total } = this.props;
     return (
       <div>
         <h1>Cart</h1>
+        <Alert show={showAlert} variant={variant}>
+          We recieved your oreder, and we are working on it
+        </Alert>
         <Row>
           {products.length && (
             products.map(({product, quantity}) => {
@@ -24,7 +52,9 @@ class Cart extends Component {
           )}
         </Row>
         <h2>Total: {total}$</h2>
-        <Button > Pay </Button>
+        <Button
+          onClick={this.handleOrder}
+        > Order </Button>
       </div>
     )
   }
@@ -38,5 +68,11 @@ const mapStateToProps = (state) => {
   }
 }
 
+const mapDispatchToProps = (dispatch) => {
+  return {
+    clearCart: () => dispatch(clearCart())
+  }
+}
 
-export default connect(mapStateToProps, getProducts)(Cart);
+
+export default connect(mapStateToProps, mapDispatchToProps)(Cart);

@@ -1,6 +1,7 @@
 import {
   ADD_TO_CART,
-  DELETE_FROM_CART
+  DELETE_FROM_CART,
+  CLEAR_CART
 } from './types';
 
 const addToCart = (product, quantity) => {
@@ -22,8 +23,16 @@ const deleteFromCart = (productId) => {
   }
 }
 
+// clear cart action creator
+const clearCart = () => {
+  return {
+    type: CLEAR_CART
+  }
+}
+
 export {
   addToCart,
-  deleteFromCart
+  deleteFromCart,
+  clearCart
 };
 
