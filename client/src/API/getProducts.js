@@ -1,4 +1,4 @@
-import products from '../StaticData/plants.json';
+import products from '../StaticData/plants.json.js';
 
 const getProducts = () => {
   return Promise.resolve(products);
