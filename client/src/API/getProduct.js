@@ -1,4 +1,4 @@
-import products from '../StaticData/plants.json.js';
+import products from '../StaticData/plants.json';
 
 const getProduct = (id) => {
   const product = products.filter(product => product.id === parseInt(id));
