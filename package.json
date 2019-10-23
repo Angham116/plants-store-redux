@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Angham116/plants-store-redux#readme",
   "dependencies": {
     "cookie-parser": "^1.4.4",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "nodemon": "^1.19.4",
     "pg": "^7.12.1"
